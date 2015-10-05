@@ -1,0 +1,133 @@
+/*****************************************************************************
+  Meta2
+******************************************************************************/
+
+
+@import '../../bower_components/bourbon/app/assets/stylesheets/_bourbon.scss';
+@import '../../bower_components/neat/app/assets/stylesheets/_neat.scss';
+
+
+
+
+
+/*****************************************************************************
+  Base Styles
+******************************************************************************/
+
+
+
+
+/*****************************************************************************
+  Layout Styles
+******************************************************************************/
+	
+	#mainNav {
+		width: 5%;
+		display: block;
+		background: #333;
+		position: fixed;
+			top: 0;
+			bottom: 0;
+	}
+
+	#mainContent {
+		width: 95%;
+		height: auto;
+		display: block;
+		background: #777;
+		margin-left: 5%;
+		float: left;
+		padding: 0;
+    	animation-name: off;
+    	animation-duration: 0.5s;
+    	transition-timing-function: linear;
+
+
+		ul.items {
+			padding: 18px 0 0 0;
+		    max-width: 636px;
+		    border-right: 2px solid #717171;
+	        margin: 0;
+
+	        .firstitem {
+				background: #333;
+				height: 432px;
+	        }
+
+			li {
+				display: block;
+				width: 94%;
+				max-width: 600px;
+				height: 144px;
+				background: #999;
+				margin: 0 3% 12px;
+				padding: 18px;
+			}
+		}
+	}
+
+	#sideContent {
+		width: 0%;
+		height: 10000px;
+		display: block;
+		background: #fff;
+		float: left;
+		padding: 72px 36px 36px 36px;
+    	animation-name: off;
+    	animation-duration: 0.5s;
+    	transition-timing-function: linear;
+    	
+
+		p {
+			color: #333;
+			line-height: 150%;
+			font-size: 15px;
+			width: 100%;
+		}
+	}
+
+	.closebutton {
+		display: none;
+		position: absolute;
+		top: 54px;
+		right: 18px;
+	}
+
+
+/*****************************************************************************
+  Module Styles
+******************************************************************************/
+
+
+
+/* The animation code */
+
+	@keyframes contractMainContent {
+	    from {width: 65%;}
+	    to {width: 30%;}
+	}
+
+
+	@keyframes expandMainContent {
+	    from {width: 30%;}
+	    to {width: 65%;}
+	}
+
+	@keyframes expandSideContent {
+	    from {width: 65%;}
+	    to {width: 30%;}
+	}
+
+
+	@keyframes contractSideContent {
+	    from {width: 30%;}
+	    to {width: 65%;}
+	}
+
+
+
+
+
+
+
+
